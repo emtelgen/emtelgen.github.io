@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: white;
+    background-image: linear-gradient(to top, #1bb4ad 0%, white 100%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #1bb4ad;
+    color: white;
+}
+
+.button:hover {
+    background: #0e6588;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #1bb4ad;
+    transition: all 0.3s ease;
+}
+
+  
+
+  .main {
+    background-color: #141414;
+  }
+
+  .main__content {
+    position: relative;
+    top: 20px;
+    background-color: #141414;
+  }
+
+  .main__content--scholar, .main__content--athlete, .main__content--leader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+  }
+  .main__content--scholar__text, .main__content--athlete__text, .main__content--leader__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 26%;
+  }
+  .main__content h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .main__content p {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+
+  #scholar__img, #athlete__img, #leader__img {
+    display: flex;
+    border: 5px solid #1bb4ad;
+  }
+
+
+
+
+
+  .main__yt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+  .main__content__yt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 50vh;
+  }
+  .main__content__yt_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+  .main__content__yt h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .main__content__yt p {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+
+
+
+  .project {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+  }
+    .project h1 {
+      color: white;
+      text-align: center;
+      font-size: 4rem;
+    }
+    .project p {
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+    }
+
+
+  .projectdesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+    .projectdesc_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 50%;
+    }
+
+  .project_algo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project_algo h2 {
+    color: white;
+    text-decoration-line: underline;
+    font-size: 40px;
+  }
+
+  .project_algo_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+    .project_algo_1_desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+    }
+
+    #ws {
+      border: 3px solid #1bb4ad;
+    }
+    .divider {
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .divider::before, .divider::after {
+      flex: 1;
+      content: '';
+      padding: 3px;
+      background-color: #1bb4ad;
+      margin: 5px;
+    }
+
+  .modifications {
+    width: 75%;
+    align-self: center;
+  }
+
+  .choice {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .choice h1 {
+    color: white;
+  }
+
+
+  .choice_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  .choice_row_img {
+    position: relative;
+  }
+  
+  .choice_image {
+    display: block;
+    height: auto;
+    border: 3px solid #1bb4ad;
+  }
+
+  
+  .choice_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #141414;
+  }
+  
+  .choice_row_img:hover .choice_overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #1bb4ad;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+  .resume {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+  }
+  .filler {
+    background-color: #141414;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+  }
+  
